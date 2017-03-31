@@ -1,3 +1,5 @@
+//Exercise 1
+
 function academicStanding (gpa) {
     var standing;
     
@@ -39,3 +41,48 @@ console.log(academicStanding(3.67));
 console.log(academicStanding(3.83));
 
 console.log(academicStanding(4.01));
+
+// Exercise 2
+
+for (var i = 0; i < 100; i+=3) {
+    console.log(i);
+}
+
+// Exercise 3
+
+var timeNow = new Date().valueOf();
+
+while ( timeNow % 100 != 0){
+    console.log(new Date().valueOf());
+    timeNow = new Date().valueOf();
+};
+
+// Exercise 4
+
+for(var i = 0; i < 2021; i++) {
+    if( (i%4 == 0) && (i%400 == 0 || i%100 !== 0) ) {
+    console.log(i);
+    }
+};
+
+// Exercise 5
+
+var result;
+
+function half(number){
+  return number / 2;
+}
+
+result = half(100)
+
+console.log(result);
+
+// Exercise 6
+
+var result = difference(385, 142);
+
+console.log(result);
+
+function difference(number1, number2){
+    return number1 - number2
+}
