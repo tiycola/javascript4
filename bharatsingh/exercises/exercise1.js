@@ -20,22 +20,25 @@
 // - A GPA of 3.6 prints "Student is in good standing with magna cum laude".
 
 function determineStanding(gpa) {
+	var standing;
 
 	if (gpa >= 3.8) {
-		return "Student is in good standing with summa cum laude.";
+		standing = "Student is in good standing with summa cum laude.";
 	}
 	else if (gpa >= 3.6) {
-		return "Student is in good standing with magna cum laude.";
+		standing = "Student is in good standing with magna cum laude.";
 	}
 	else if (gpa >= 3.4) {
-		return "Student is in good standing with cum laude.";
+		standing = "Student is in good standing with cum laude.";
 	}
 	else if (gpa >= 2.5) {
-		return "Student is in good standing";
+		standing = "Student is in good standing";
 	}
 	else if (gpa < 2.0) {
-		return "Student is on probation";
+		standing = "Student is on probation";
 	}
+
+	return standing;
 };
 
 console.log(determineStanding(1.5));
