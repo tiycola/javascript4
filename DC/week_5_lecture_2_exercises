@@ -1,0 +1,41 @@
+function academicStanding (gpa) {
+    var standing;
+    
+    if (gpa < 2.0) {
+        standing = "Student is on academic probation.";
+    }
+    
+    else if (gpa < 3.40) {
+        standing = "Student is in good standing";
+    }
+
+    else if (gpa < 3.60) {
+        standing = "Student is in good standing with cum laude.";
+    }
+
+    else if (gpa < 3.8) {
+        standing = "Student is in good standing magna with cum laude.";
+    }
+
+    else if (gpa <= 4.00) {
+        standing = "Student is in good standing with summa cum laude.";
+    }
+
+    else if (gpa > 4.00) {
+        standing = "Student GPA falls outside of acceptable range.";
+    }
+
+    return standing;
+}
+
+console.log(academicStanding(1.9));
+
+console.log(academicStanding(2.5));
+
+console.log(academicStanding(3.45));
+
+console.log(academicStanding(3.67));
+
+console.log(academicStanding(3.83));
+
+console.log(academicStanding(4.01));
