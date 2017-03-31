@@ -15,7 +15,7 @@ function printStanding(GPA) {
   } else if (GPA >= 3.80 && GPA <= 4.00){
   	result= result + " with summa cum laude";
   }
-  
+
 		console.log(result);
 }
 printStanding(3.5);
@@ -32,7 +32,7 @@ for(i=0; i <= 99; i = i + 3){
 
 
 
-3) 
+3)
 
 var currentTime;
 while( currentTime= new Date().valueOf()){
@@ -47,14 +47,20 @@ while( currentTime= new Date().valueOf()){
 
 For example:
 
-* 2004 is divisible by 4, and is not divisible by 100, so it's a leap year.
-* 2000 is divisible by 4, 100 and 400, so it's a leap year.
-* 1700 is divisible by 4 and 100, but not 400, so it's not a leap year.
+//* 2004 is divisible by 4, and is not divisible by 100, so it's a leap year.
+//* 2000 is divisible by 4, 100 and 400, so it's a leap year.
+//* 1700 is divisible by 4 and 100, but not 400, so it's not a leap year.
 
-You will output all of the leap years from the year 0 to 2020 by doing the following steps:
+//You will output all of the leap years from the year 0 to 2020 by doing the following steps:
 
-1. Write out pseudocode that describes the process you would need to go through to complete this requirement.
-2. Translate the pseudocode into real JavaScript that accomplishes the requirement.
+//1. Write out pseudocode that describes the process you would need to go through to complete this requirement.
+//2. Translate the pseudocode into real JavaScript that accomplishes the requirement.
+
+for(var i = 0; i <2021; i++){
+	if(i%4) && (i%400 == 0 || i%100 !=0)) {
+		console.log()
+	}
+}
 
 
 
@@ -62,13 +68,13 @@ You will output all of the leap years from the year 0 to 2020 by doing the follo
 
 
 var result;
- 
+
  function half(number){
  	 return number / 2;
  }
- 
+
  result = half(100);
- 
+
  console.log(result);
 
 
@@ -84,11 +90,7 @@ var result = difference(385, 142);
 function difference(num1, num2){
 	return num1 - num2;
  };
- 
+
  var result = difference(385, 142);
- 
+
  console.log(result);
-
-
-
-
