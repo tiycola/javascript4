@@ -2,7 +2,7 @@
 d. function
 
 2. What type of statement would you use if you wanted to execute a single block of code under a specific circumstance?
-d. all of the above
+a. if
 
 3. While loops execute until:
 b. The conditional expression evaluates to false.
